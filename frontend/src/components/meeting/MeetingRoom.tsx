@@ -97,7 +97,7 @@ export function MeetingRoom({ meetingId }: MeetingRoomProps) {
           {/* Main content area */}
           <main className="flex min-w-0 flex-1 flex-col relative z-0">
             {showTranscript ? (
-              <Transcript status={status} />
+              <Transcript />
             ) : (
               <WaitingScreen meetingId={meetingId} isHost={isHost} />
             )}
